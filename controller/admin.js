@@ -94,7 +94,7 @@ exports.doAddManager = async (req, res) => {
       address: req.body.address,
     });
   }
-  let    = new Account({
+  let newAccount = new Account({
     email: req.body.email,
     password: "12345678",
     role: "Manager",
