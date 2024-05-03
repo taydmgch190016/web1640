@@ -38,7 +38,7 @@ router.get("/admin/viewManager", isAdmin, adminController.viewManager);
 router.get("/admin/addManager", isAdmin, adminController.addManager);
 router.post(
   "/admin/doAddManager",
-  isAdmin,
+  // isAdmin,
   uploadManager.single("picture"),
   adminController.doAddManager
 );
