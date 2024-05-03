@@ -365,7 +365,7 @@ exports.numberOfIdeasByYear2 = async (req, res) => {
 };
 
 exports.numberOfPeople = async (req, res) => {
-  let role = ["business", "Computer", "Design"];
+  let role = ["Student", "Coordinator", "Guest"];
   let data = [];
   let counter = 0;
   role.forEach(async (i) => {
@@ -377,7 +377,7 @@ exports.numberOfPeople = async (req, res) => {
     counter += 1;
     if (counter === 3) {
       console.log(data);
-      res.render("manager/numberOfPeoPle", {
+      res.render("manager/numberOfPeople", {
         data: JSON.stringify(data),
         loginName: req.session.email,
       });
